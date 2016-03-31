@@ -1,0 +1,47 @@
+// salario y hola mundo.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define IVA 0.13
+#define AFP 0.1271
+using namespace std;
+
+void main()
+{
+
+	int i,n,opcion;
+	float sb,sn;
+
+	do {
+		cout <<"\t menu" ;
+		cout << "1.- Salario" << endl;
+		cout << "2.- Hola Mundo" << endl;
+		cout << "0.- salir" <<endl;
+		cout << "Elige una opción: " ;
+		cin >> opcion;
+		switch (opcion)
+		{
+		case 1: {
+			cout<<"ingrese numero de empleados";
+			cin>>n;
+			for (i=1;i<=n;i++)
+			{
+				cout<<"ingresar salario bruto";
+				cin>>sb;
+				if (sb>=7000)
+					sn=sb-(IVA+AFP)*sb;
+				else
+					sn=sb-(AFP*sb);
+				cout<< "el salario neto es"<<sn<<endl;
+				getch();
+			}
+
+			getch();
+				}
+		case 2: {
+			cout<< "ingrese hola mundo";
+			cin>>"hola mundo";
+			getch();
+				}
