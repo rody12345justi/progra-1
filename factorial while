@@ -1,0 +1,24 @@
+// validacion de datos.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main()
+{
+	int p,i,n;
+	p=1;
+	do{
+	cout<<"Ingresar un numero:"<<endl;
+	cin>>n;
+	}while (n<0);
+	i=1;
+	while (i<=n)
+	{
+		p=p*i;
+		i++;
+	}
+	cout<<"El factorial es:"<<p<<endl;
+	getch();
+}
