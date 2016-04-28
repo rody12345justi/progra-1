@@ -1,0 +1,23 @@
+// ejercicio 3 par o impar : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main()
+{
+	int n;
+	cout<<"ingrese un numero positivo:";
+	cin>>n;
+	while (n % 2==0){
+	
+		cout<<"el numero es par:"<<endl;
+	if (n % 2 !=0)
+		cout<<"el numero es impar:"<<endl;
+	 else 
+		 cout<<"ingrese un numero entero positivo:"<<endl;}
+		                 
+  getch();
+}
+
